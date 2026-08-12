@@ -74,9 +74,25 @@
 #define TCCR1A  (*((volatile u8*)0x4F)) // Timer1 Control Register A
 #define TCCR1B  (*((volatile u8*)0x4E)) // Timer1 Control Register B
 #define TCNT1   (*((volatile u16*)0x4C)) // Timer1 Counter Register
+#define ICR1    (*((volatile u16*)0x46)) // Timer1 Input Capture Register (used as TOP in mode 14)
 #define OCR1A   (*((volatile u16*)0x4A)) // Timer1 Output Compare Register A
+#define OCR1B   (*((volatile u16*)0x48)) // Timer1 Output Compare Register B
+
+// TCCR1A bit positions
+#define WGM10   0
+#define WGM11   1
+#define FOC1B   2
+#define FOC1A   3
+#define COM1B0  4
+#define COM1B1  5
+#define COM1A0  6
+#define COM1A1  7
 
 // TCCR1B bit positions
+#define CS10    0
+#define CS11    1
+#define CS12    2
+#define WGM13   4
 #define WGM12   3 // CTC Mode selection bit A
 
 // TIMER2 REGISTERS
@@ -180,7 +196,7 @@
 #define INTF0   6
 #define INTF1   7
 
-// twi registers
+// twi status codes
 #define START_ACK                0x08  
 #define REP_START                0x10  
 #define SLAVE_ADD_AND_WR_ACK     0x18  

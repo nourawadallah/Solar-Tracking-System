@@ -1,7 +1,7 @@
 #ifndef ADC_H
 #define ADC_H
 
-#include "c:\users\noura\Documents\Atmel Studio\7.0\DeciMetroExpress\DeciMetroExpress\UTILS\STD_types.h"
+#include "UTILS\STD_types.h"
 
 // select voltage reference source
 typedef enum {

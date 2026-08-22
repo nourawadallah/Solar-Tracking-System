@@ -1,6 +1,6 @@
-#include "c:\users\noura\Documents\Atmel Studio\7.0\DeciMetroExpress\DeciMetroExpress\MCAL\ADC\ADC.h"
-#include "c:\users\noura\Documents\Atmel Studio\7.0\DeciMetroExpress\DeciMetroExpress\UTILS\atmega32_regs.h"
-#include "c:\users\noura\Documents\Atmel Studio\7.0\DeciMetroExpress\DeciMetroExpress\UTILS\common_macros.h"
+#include "MCAL\ADC\ADC.h"
+#include "UTILS\atmega32_regs.h"
+#include "UTILS\common_macros.h"
 
 #ifndef ISR
 #define ISR(vector) void vector(void) __attribute__((signal, used)); void vector(void)
